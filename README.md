@@ -1,2 +1,2 @@
 # vscode
-viscose
+vscode for my progjects
