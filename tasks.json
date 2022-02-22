@@ -29,3 +29,46 @@
     ],
     "version": "2.0.0"
 }
+
+//httpd  调试
+
+{
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: gcc-9",            
+            "command": "/usr/bin/gcc-9",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "-W ",
+                "-Wall",                 
+                "-std=c++11",
+                "${file}",
+                "-lpthread ",
+                "-o",
+                "/home/keller/tinyhttpd-0.1.0/httpd"
+            ],
+
+            "options": {
+                "cwd": "/home/keller/tinyhttpd-0.1.0/"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "panel": "new",
+                "reveal": "silent",
+                "clear": true
+              
+            },
+            "detail": "调试器生成的任务。"
+        }
+    ],
+
+    "version": "2.0.0"
+}
