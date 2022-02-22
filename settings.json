@@ -1,0 +1,7 @@
+//httpd 调试
+{
+    "git.ignoreLimitWarning": true,
+    "files.associations": {
+        "chrono": "cpp"
+    }
+}
